@@ -7,7 +7,7 @@ import com.mongodb.MongoClientSettings;
 
 public class ConPool {
     public static MongoClient getConnection() {
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://titanicdisastermongodb:<password>@titanicdisastercluster.w0xseq0.mongodb.net/?retryWrites=true&w=majority");
+        ConnectionString connectionString = new ConnectionString("");
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();
