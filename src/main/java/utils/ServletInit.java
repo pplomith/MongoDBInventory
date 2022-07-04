@@ -1,7 +1,5 @@
 package utils;
 
-import model.TitanicDAO;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,8 +20,6 @@ public class ServletInit extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        TitanicDAO tDato = new TitanicDAO();
-        tDato.getDataFromDB();
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request,response);
     }

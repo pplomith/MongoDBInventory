@@ -1,0 +1,28 @@
+#container {
+    margin: 45px;
+}
+#cardContainer {
+    display: flex;
+    flex-display: row;;
+}
+#filterForm {
+    width: 30%;
+    margin-right: 10px;
+}
+
+#tableContainer {
+    width: 70%;
+}
+
+table.dataTable tbody tr {
+    max-height: 20px;
+}
+
+#btnProduct {
+    display: flex;
+    flex-direction: row;
+}
+
+#btnProduct .btn {
+    margin-right: 5px;
+}
